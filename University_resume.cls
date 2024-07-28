@@ -3,7 +3,7 @@
 % University Logo Version
 %
 % This template is published on github
-% https://github.com/Icey0714/CV
+% https://github.com/IceySwan/CV
 %
 % Original author: Icey Swan
 % Copyright 2024 Icey One(https://www.icey.one/)
@@ -15,7 +15,7 @@
 %
 % =============================================================================%%
 
-\ProvidesClass{University_resume}[2022/12/17 v3.0 Resume class]
+\ProvidesClass{University_resume}[2024/07/28]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexart}} % Pass through any options to the base class
 \ProcessOptions\relax
@@ -24,6 +24,7 @@
 % 加载常用宏包，并添加简要注释
 \RequirePackage{amsmath}  % 数学公式
 \RequirePackage{amssymb}  % 数学符号
+\RequirePackage{romannum} % 罗马数字
 \RequirePackage{enumitem} % 列表环境
 \RequirePackage{tikz}     % 绘图
 \RequirePackage{xcolor}    % 颜色
@@ -55,7 +56,7 @@
 % 页面大小与页边距
 \geometry{
     a4paper,
-	top=0.6in, % Top margin
+	top=0.75in, % Top margin
 	bottom=0.6in, % Bottom margin
 	left=0.25in, % Left margin
 	right=0.25in, % Right margin
@@ -104,6 +105,14 @@
 
 \AtBeginDocument{
 % 页眉和页脚设置
+%\fancypagestyle{plain}{
+%    \fancyhf{} % 清除默认的页眉和页脚
+%    \renewcommand{\headrulewidth}{0.75in} % 页眉横线的高度
+%    \renewcommand{\footrulewidth}{0.75in} % 页脚横线的高度
+%}
+
+% 设置默认的页眉和页脚样式
+\pagestyle{plain}
 \fancypagestyle{plain}{
     \fancyhf{} % 清空当前页眉和页脚
 
@@ -146,7 +155,7 @@
             \bLogo
         };
     \end{tikzpicture}
-
-
     \pagestyle{plain}
+
+    
 }
