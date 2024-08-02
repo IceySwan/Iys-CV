@@ -7,3 +7,4 @@ My LaTeX CV template, including minimalist and university logo version
 ### 2024.07.25  v1 
 该自 [NPU CV](https://www.overleaf.com/latex/templates/npu-cv/mncqzxhvfzrx) 支持校徽替换和主题色所以理论上支持任何大学
 
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=Z2hwX2wyNjE2VTdLd3N6aWE0eFl6TTB6MWJ6Vk5iSkt0cjF3Q3l3aw==#IceySwan/CV&Date" frameBorder="0"></iframe>
