@@ -12,8 +12,8 @@ The name of ”lys" is inspired by the [Fleur de lys](https://fr.wikipedia.org/w
 
 |         | Aroma Version                                | Logo Version                               | Plain Version                                |
 | ------- | -------------------------------------------- | ------------------------------------------ | -------------------------------------------- |
-| Default | ![Aroma-Default](./assets/Aroma-Default.png) | ![Logo-Default](.\assets\Logo-Default.png) | ![Plain-Default](.\assets\Plain-Default.png) |
-| Avatar  | ![Aroma_Avatar](.\assets\Aroma-Avatar.png)   | ![Logo_Avatar](.\assets\Logo-Avatar.png)   | ![Plain-Avatar](.\assets\Plain-Avatar.png)   |
+| Default | ![Aroma-Default](./assets/Aroma-Default.png) | ![Logo-Default](./assets/Logo-Default.png) | ![Plain-Default](./assets/Plain-Default.png) |
+| Avatar  | ![Aroma_Avatar](./assets/Aroma-Avatar.png)   | ![Logo_Avatar](./assets/Logo-Avatar.png)   | ![Plain-Avatar](./assets/Plain-Avatar.png)   |
 
 Aroma Version is modified from  [Awesome CV](https://github.com/posquit0/Awesome-CV),  supports Chinese, and setting avatar. 
 
