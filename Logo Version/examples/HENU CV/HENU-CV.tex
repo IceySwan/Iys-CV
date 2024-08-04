@@ -1,0 +1,52 @@
+\documentclass{HENU-CV}
+% 自定义颜色
+\definecolor{customcolor}{RGB}{71,96,169} % 该颜色取自校徽
+
+% 自定义命令
+\newcommand{\aLogo}{\includegraphics[width=0.15\textwidth]{images/henu_logo.png}} % 页眉校徽
+\newcommand{\bLogo}{\includegraphics[width=0.75\textwidth]{images/henu_logo_2048px.png}} % 底纹水印
+\newcommand{\school}{数学与统计学院} %页眉参数
+\newcommand{\contact}{\textcolor{white}{\textbf{明德新民 \quad 止于至善}}} %页脚参数
+
+
+\begin{document}
+\section{个人信息}
+\begin{minipage}{0.75\textwidth}
+        \begin{tabular}{ll}
+        \textbf{姓名} & Name          \\
+        \textbf{电话} & YourTel       \\
+        \textbf{邮箱} & \href{mailto:yourname@henu.edu.cn}{yourname@henu.edu.cn} \\
+        \textbf{地址} & 河南省开封市顺河区明伦街 85 号河南大学        
+        \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+    \includegraphics[height=0.4\textwidth]{images/avatar.png}
+\end{minipage}
+\section{教育经历}
+
+\begin{cSubsection}{河南大学}{2021.09 - 至今}{数学与应用数学 | GPA: 3.3/4.0}{开封，河南}
+\end{cSubsection}
+
+
+\section{科研经历}
+\begin{cSubsection}{cSubsection 环境}{cSubsection 环境}{不包含列表环境}{不包含列表环境否}
+\end{cSubsection}
+
+\begin{rSubsection}{rSubsection 环境}{rSubsection 环境}{包含列表环境}{包含列表环境}
+    \item rSubsection 包含列表环境，cSubsection 不包含列表环境
+\end{rSubsection}
+
+\section{技能}
+
+\begin{itemize}
+    \item \LaTeX \hfill 从零手搓 cls 文件| 熟练
+    \item Python \hfill 编写程序解决问题 | 熟练
+    \item Matlab \hfill 编写 m 函数解决问题并进行可视化 | 了解
+    \item Mathematica \hfill 基本了解 | 了解
+\end{itemize}
+
+\section{自我评价}
+\href{https://github.com/IceySwan/CV}{https://github.com/IceySwan/CV}
+\end{document}
+
