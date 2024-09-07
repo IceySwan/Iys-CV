@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024.09.07
+
+1. Modify the table width of the cvhonor section
+
 ## 2024.08.04 V1.2
 
 ### Added
