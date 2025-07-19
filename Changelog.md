@@ -1,8 +1,11 @@
 # Changelog
 
-## 2024.09.07
+## 2025.07.18 V1.2.1
+
+Modify `Aroma version`
 
 1. Modify the table width of the cvhonor section
+1. Modify  Section title style
 
 ## 2024.08.04 V1.2
 

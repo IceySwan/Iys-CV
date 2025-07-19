@@ -25,7 +25,7 @@
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{aroma-cv}[2017/02/05 v1.6.1 Aroma Curriculum Vitae Class]
+\ProvidesClass{aroma-cv}[2025/07/08 v1.6.1 Aroma Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
 
 
@@ -73,9 +73,9 @@
 % Needed to change line spacing in specific environment
 \RequirePackage{setspace}
 % Needed to manage fonts
-%\RequirePackage[quiet]{fontspec}
+\usepackage{fontspec}
 % To support LaTeX quoting style
-\defaultfontfeatures{Ligatures=TeX}
+%\defaultfontfeatures{Ligatures=TeX}
 % Needed to manage math fonts
 \RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
@@ -189,7 +189,7 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\ifbool{acvSectionColorHighlight}{\color{aroma}}{\color{text}} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
@@ -218,7 +218,7 @@
 \newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
 
 % For elements of the cover letter
-\newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\ifbool{acvSectionColorHighlight}{\color{aroma}}{\color{text}} #1}}
 \newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
@@ -636,9 +636,10 @@
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
   \vspace{\acvSectionTopSkip}
-  \sectionstyle{#1}
+  \sectionstyle{#1}%
+  \vspace{1pt}%
+  \color{black}\hrule height 1pt% 
   \phantomsection
-  \color{sectiondivider}\vhrulefill{0.9pt}
 }
 
 % Define a subsection for CV
@@ -772,8 +773,9 @@
 \newcommand{\lettersection}[1]{%
   \par\addvspace{2.5ex}
   \phantomsection{}
-  \lettersectionstyle{#1}
-  \color{sectiondivider}\vhrulefill{0.9pt}
+  \lettersectionstyle{#1}%
+  \vspace{1pt}%
+  \color{aroma}\hrule height 1pt%
   \par\nobreak\addvspace{0.4ex}
   \lettertextstyle
 }
